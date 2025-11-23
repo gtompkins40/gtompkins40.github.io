@@ -1,50 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services – Krieger Business Solutions</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap');
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:'Inter',sans-serif; color:#4A5568; background:#f9f9f9; line-height:1.6; }
-    header { background:#0A1D37; padding:1rem; text-align:center; }
-    header img { max-width:180px; height:auto; }
-    nav { background:#0A1D37; padding:0.75rem; text-align:center; }
-    nav a { color:#fff; margin:0 1rem; text-decoration:none; font-weight:600; }
-    .content { padding:3rem 1rem; max-width:900px; margin:auto; text-align:center; }
-    .content h1 { font-family:'Montserrat',sans-serif; margin-bottom:1.5rem; }
-    .content img { max-width:100%; height:auto; margin:1.5rem 0; border-radius:8px; }
-    .content ul { list-style:none; }
-    .content li { margin:1.5rem 0; font-size:1.1rem; }
-    .cta { background:#F7931E; color:#fff; padding:0.75rem 1.5rem; text-decoration:none; border-radius:5px; font-weight:600; display:inline-block; margin-top:1.5rem; }
-    footer { background:#0A1D37; color:#fff; text-align:center; padding:1.5rem; font-size:0.9rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Krieger Business Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            background-color: #2a3439; /* Gunmetal gray */
+            color: #ffffff; /* White text for dark bg */
+        }
+        .hero { 
+            background-color: #007bff; /* Keep blue for contrast */
+            color: white; 
+            padding: 60px 0; 
+            text-align: center; 
+        }
+        .footer { 
+            background-color: #3a444a; /* Slightly lighter gunmetal for footer */
+            padding: 20px; 
+            text-align: center; 
+        }
+        .navbar { 
+            background-color: #2a3439 !important; /* Match body */
+        }
+        .nav-link { 
+            color: #ffffff !important; /* White nav links */
+        }
+        .container.my-5 { 
+            background-color: #ffffff; /* White bg for content sections */
+            color: #2a3439; /* Dark text inside */
+            padding: 20px; 
+            border-radius: 8px; 
+        }
+        .pack-img { 
+            max-height: 200px; /* Scale for consistency */
+            object-fit: contain; 
+            loading: lazy; /* Perf boost */
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Krieger Business Solutions Logo">
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Krieger Business Solutions Logo" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <section class="content">
-    <h1>Our Services</h1>
-    <img src="services.jpg" alt="Team collaborating on solutions">
-    <ul>
-      <li><strong>Consulting</strong> – Strategy, operations, scaling for defense & business.</li>
-      <li><strong>Tech Integration</strong> – Custom dashboards, AI tools, systems that actually work.</li>
-      <li><strong>Audits & Optimization</strong> – Cut costs, reclaim hours, hit every deadline.</li>
-    </ul>
-    <a href="contact.html" class="cta">Let's Talk</a>
-  </section>
+    <section class="hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p class="lead">Modular software and expert consulting—built for scalability, from defense contracting to SMB maintenance. Future-proof tech like C++23 cores and ML predictions, no rework required.</p>
+        </div>
+    </section>
 
-  <footer>
-    © 2025 Krieger Business Solutions LLC. All rights reserved.<br>
-    Email: info@kriegerbs.com | Phone: (571) 369-7716
-  </footer>
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Mainline CMMS: Modular Maintenance Software</h2>
+        <p>Mainline is our flagship CMMS—cloud tiers for easy access or enterprise on-prem for air-gapped security. Pay flat rates; toggle modules without price changes. Pre-configured packs for quick starts, with custom configs via simple rewrites. Powered by ML for predictive scheduling and needs forecasting (adaptive like PID tuning—high accuracy, no overfit).</p>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Pack</th>
+                        <th>Key Modules (Toggle Any)</th>
+                        <th>Target Industries</th>
+                        <th>Visual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Restaurant Pack</td>
+                        <td>Work Orders, Scheduling, POS, Deliveries, Reporting</td>
+                        <td>QSR, Cafés, Franchises</td>
+                        <td><img src="images/restaurant.png" class="pack-img" alt="Restaurant CMMS Illustration"></td>
+                    </tr>
+                    <tr>
+                        <td>HVAC Pack</td>
+                        <td>Asset Tracking, Inventory, Predictive Alerts, Zones</td>
+                        <td>Service Fleets, Facility Mgmt</td>
+                        <td><img src="images/hvac.png" class="pack-img" alt="HVAC CMMS Illustration"></td>
+                    </tr>
+                    <tr>
+                        <td>Farmer Pack</td>
+                        <td>Harvest Scheduling, IoT Sensors, Areas/Zones, Maintenance</td>
+                        <td>Ag Ops, Schools</td>
+                        <td><img src="images/farmer.png" class="pack-img" alt="Farmer CMMS Illustration"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mt-3">Enterprise add-ons: LDAP/AD, audit logs, FIPS compliance. Cloud: Atlassian-integrated CI/CD for updates (flexible switch to GitLab if better—e.g., for advanced pipelines without rework).</p>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Consulting & SBIR Services</h2>
+        <p>Leverage our 53+ years in C++, simulations, and DoD compliance for quick revenue wins. Modular bundles—no fixed paths, toggle as needed.</p>
+        <ul>
+            <li>CMMI Level 3 Audits/Implementations: Gap analysis, processes, documentation—$50-100k/gig (from ASSETT expertise; scalable to CMMC bundles).</li>
+            <li>CMMC Compliance: NIST 800-171/53 setups, RMF/ATO prep—$100-200k (future-proof for DoD subs; hybrid with CMMI for full audits).</li>
+            <li>SBIR Phase I/II Execution: Prototyping, proposals, ML/GNC integrations—win rates boosted by Navy/AF creds (e.g., SDV systems, GPU algos).</li>
+            <li>DevOps & Engineering: CI/CD pipelines, signal processing patches, custom integrations—flexible for Mainline add-ons.</li>
+        </ul>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Coming Soon: More Modular Tools</h2>
+        <p>Once Mainline scales, we'll expand: "Quicken that Doesn't Suck"—modular accounting with packs for DCAA compliance or franchises (Python backend for quick prototypes, C++ if perf needs—avoids bloat like Intuit).</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Krieger Business Solutions, LLC. All rights reserved. | <a href="mailto:hello@kriegerbs.com">Contact Us</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
