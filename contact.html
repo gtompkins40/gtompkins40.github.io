@@ -1,46 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact – Krieger Business Solutions</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap');
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:'Inter',sans-serif; color:#4A5568; background:#f9f9f9; line-height:1.6; }
-    header { background:#0A1D37; padding:1rem; text-align:center; }
-    header img { max-width:180px; height:auto; }
-    nav { background:#0A1D37; padding:0.75rem; text-align:center; }
-    nav a { color:#fff; margin:0 1rem; text-decoration:none; font-weight:600; }
-    .content { padding:3rem 1rem; max-width:800px; margin:auto; text-align:center; }
-    .content h1 { font-family:'Montserrat',sans-serif; margin-bottom:1.5rem; }
-    .content img { max-width:100%; height:auto; margin:1.5rem 0; border-radius:8px; }
-    .cta { background:#F7931E; color:#fff; padding:0.75rem 1.5rem; text-decoration:none; border-radius:5px; font-weight:600; display:inline-block; margin:1rem 0; }
-    footer { background:#0A1D37; color:#fff; text-align:center; padding:1.5rem; font-size:0.9rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Krieger Business Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            background-color: #2a3439; /* Gunmetal gray */
+            color: #ffffff; /* White text for dark bg */
+        }
+        .hero { 
+            background-color: #007bff; /* Keep blue for contrast */
+            color: white; 
+            padding: 60px 0; 
+            text-align: center; 
+        }
+        .footer { 
+            background-color: #3a444a; /* Slightly lighter gunmetal for footer */
+            padding: 20px; 
+            text-align: center; 
+        }
+        .navbar { 
+            background-color: #2a3439 !important; /* Match body */
+        }
+        .nav-link { 
+            color: #ffffff !important; /* White nav links */
+        }
+        .container.my-5 { 
+            background-color: #ffffff; /* White bg for content sections */
+            color: #2a3439; /* Dark text inside */
+            padding: 20px; 
+            border-radius: 8px; 
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Krieger Business Solutions Logo">
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Krieger Business Solutions Logo" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <section class="content">
-    <h1>Get in Touch</h1>
-    <img src="contact.jpg" alt="Business handshake">
-    <p><strong>Email:</strong> <a href="mailto:info@kriegerbs.com">info@kriegerbs.com</a></p>
-    <p><strong>Phone:</strong> (571) 369-7716</p>
-    <p><strong>Book a free 30-min call:</strong></p>
-    <a href="https://calendly.com/garrettkrieger/30min" class="cta" target="_blank">Schedule Now</a>
-  </section>
+    <section class="hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p class="lead">Ready for modular CMMS demos, CMMI audits, or SBIR collaborations? We're here to discuss your needs—cloud tiers, enterprise installs, or custom packs. Future-proof solutions, no rework.</p>
+        </div>
+    </section>
 
-  <footer>
-    © 2025 Krieger Business Solutions LLC. All rights reserved.<br>
-    Email: info@kriegerbs.com | Phone: (571) 369-7716
-  </footer>
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Contact Information</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><strong>Email:</strong> <a href="mailto:info@kriegerbs.com">info@kriegerbs.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rob-j-adams-893a0b35" target="_blank">Connect with our Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Send Us a Message</h2>
+        <p class="text-center">Fill out the form below for inquiries on Mainline packs, consulting gigs, or partnerships. We'll respond within 1-2 business days.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- Create a Google Form at forms.google.com (e.g., fields: Name, Email, Message, Query Type dropdown: Mainline Demo / CMMI Audit / SBIR Support / Other). Paste the embed code here. -->
+                <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Krieger Business Solutions, LLC. All rights reserved. | <a href="mailto:hello@kriegerbs.com">Contact Us</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
