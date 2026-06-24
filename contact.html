@@ -3,55 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Krieger Business Solutions</title>
+    <meta name="description" content="Contact Krieger Business Solutions for Mainline CMMS demos, CMMI audits, SBIR collaborations, and consulting inquiries.">
+    <title>Contact — Krieger Business Solutions</title>
+    <link rel="icon" href="images/KLogoOnly.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        @font-face {
-            font-family: 'Caprina Medium';
-            src: url('assets/caprina-medium.otf') format('opentype'); /* Relative path to font file */
-            font-weight: normal;
-            font-style: normal;
-        }
-        body { 
-            font-family: 'Roboto', sans-serif; 
-            background-color: #2a3439; /* Gunmetal gray */
-            color: #ffffff; /* White text for dark bg */
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Caprina Medium', sans-serif; /* Apply Caprina Medium to headers */
-        }
-        .hero {
-            background-color: #007bff; /* Keep blue for contrast */
-            color: white; 
-            padding: 60px 0; 
-            text-align: center; 
-        }
-        .footer { 
-            background-color: #3a444a; /* Slightly lighter gunmetal for footer */
-            padding: 20px; 
-            text-align: center; 
-        }
-        .navbar { 
-            background-color: #2a3439 !important; /* Match body */
-        }
-        .nav-link { 
-            color: #ffffff !important; /* White nav links */
-        }
-        .container.my-5 { 
-            background-color: #ffffff; /* White bg for content sections */
-            color: #2a3439; /* Dark text inside */
-            padding: 20px; 
-            border-radius: 8px; 
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/KLogoOnly.png" alt="Krieger Business Solutions Logo" width="150">
+                    <img src="images/KLogoOnly.png" alt="Krieger Business Solutions" width="150" height="48">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,9 +28,9 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,37 +40,79 @@
     <section class="hero">
         <div class="container">
             <h1>Get in Touch</h1>
-            <p class="lead">Ready for modular CMMS demos, CMMI audits, or SBIR collaborations?<br>We're here to discuss your needs—cloud tiers, enterprise installs, or custom packs.<br>Future-proof solutions, no rework.</p>
+            <p class="lead">Ready for a Mainline CMMS demo, a CMMI audit, or an SBIR collaboration? Tell us about your needs — cloud tiers, enterprise installs, or custom packs.</p>
         </div>
     </section>
 
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Contact Information</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <ul class="list-unstyled">
-                    <li><strong>Email:</strong> <a href="mailto:info@kriegerbs.com">info@kriegerbs.com</a></li>
-                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rob-j-adams-893a0b35" target="_blank">Connect with our Team</a></li>
-                </ul>
+    <main id="main-content" class="page-main">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="content-section h-100">
+                        <span class="section-label">Reach Us</span>
+                        <h2>Contact Information</h2>
+                        <ul class="contact-info-list">
+                            <li>
+                                <i class="bi bi-envelope" aria-hidden="true"></i>
+                                <a href="mailto:hello@kriegerbs.com">hello@kriegerbs.com</a>
+                            </li>
+                            <li>
+                                <i class="bi bi-linkedin" aria-hidden="true"></i>
+                                <a href="https://www.linkedin.com/in/rob-j-adams-893a0b35" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+                            </li>
+                        </ul>
+                        <p class="text-muted-custom mt-3 mb-0">We respond to inquiries within one to two business days.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="content-section">
+                        <span class="section-label">Inquiry Form</span>
+                        <h2>Send Us a Message</h2>
+                        <p>Use the form below for questions about Mainline packs, consulting engagements, or partnerships.</p>
+                        <div class="form-embed">
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSfZxHXV0GpQJVt4ynK39a5H0GO-58yKtUy68IY0yaP-JcpQFw/viewform?embedded=true"
+                                title="Contact inquiry form"
+                                loading="lazy">
+                                Loading form…
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Send Us a Message</h2>
-        <p class="text-center">Fill out the form below for inquiries on Mainline packs, consulting gigs, or partnerships. We'll respond within 1-2 business days.</p>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <!-- Create a Google Form at forms.google.com (e.g., fields: Name, Email, Message, Query Type dropdown: Mainline Demo / CMMI Audit / SBIR Support / Other). Paste the embed code here. -->
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZxHXV0GpQJVt4ynK39a5H0GO-58yKtUy68IY0yaP-JcpQFw/viewform?usp=header" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3>Krieger Business Solutions</h3>
+                    <p>Modular CMMS software and consulting for maintenance operations, defense contractors, and growing businesses.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:hello@kriegerbs.com">hello@kriegerbs.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Krieger Business Solutions, LLC. All rights reserved.</p>
             </div>
         </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2025 Krieger Business Solutions, LLC. All rights reserved. | <a href="mailto:hello@kriegerbs.com">Contact Us</a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
