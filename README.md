@@ -1,2 +1,2 @@
 # kriegerbs
-Website for Krieger Business Solutions LLC
+Website for Krieger Business Solutions, LLC
